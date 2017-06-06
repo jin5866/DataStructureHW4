@@ -13,16 +13,16 @@ public class Node {
     Node(int _val)
     {
         this.val =_val;
-        this.left =null;
-        this.right = null;
-        this.parent = null;
+        this.left =RBTree.nil;
+        this.right = RBTree.nil;
+        this.parent = RBTree.nil;
         red = true;
     }
 
 
     public boolean isLeaf()
     {
-        return left == null && right == null;
+        return left == RBTree.nil && right == RBTree.nil;
     }
 
 
