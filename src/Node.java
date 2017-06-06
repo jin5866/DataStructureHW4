@@ -20,4 +20,11 @@ public class Node {
     }
 
 
+    public boolean isLeaf()
+    {
+        return left == null && right == null;
+    }
+
+
+
 }

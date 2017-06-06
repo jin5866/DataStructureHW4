@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1926eb40-5756-4b93-aba0-33024347aabb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Node.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HW4.java" afterPath="$PROJECT_DIR$/src/HW4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Node.java" afterPath="$PROJECT_DIR$/src/Node.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RBTree.java" afterPath="$PROJECT_DIR$/src/RBTree.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,11 +20,18 @@
       <file leaf-file-name="RBTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RBTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="96" column="49" lean-forward="true" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
+            <state relative-caret-position="474">
+              <caret line="242" column="0" lean-forward="true" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
               <folding>
                 <element signature="method#LeftRotate#0;class#RBTree#0" expanded="false" />
                 <element signature="method#RightRotate#0;class#RBTree#0" expanded="false" />
+                <element signature="method#InsertFix#0;class#RBTree#0" expanded="false" />
+                <element signature="method#Insert#0;class#RBTree#0" expanded="false" />
+                <element signature="method#delete#0;class#RBTree#0" expanded="false" />
+                <element signature="method#RB_delete#0;class#RBTree#0" expanded="false" />
+                <element signature="method#RBDeleteFixup#0;class#RBTree#0" expanded="false" />
+                <element signature="method#trasplant#0;class#RBTree#0" expanded="false" />
+                <element signature="method#tree_minimum#0;class#RBTree#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -45,9 +50,12 @@
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="475">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,8 +87,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="499" />
-    <option name="y" value="41" />
+    <option name="x" value="656" />
+    <option name="y" value="33" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -370,7 +378,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="499" y="41" width="1400" height="1000" extended-state="0" />
+    <frame x="656" y="33" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -420,19 +428,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="475">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RBTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="96" column="49" lean-forward="true" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
+        <state relative-caret-position="474">
+          <caret line="242" column="0" lean-forward="true" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
           <folding>
             <element signature="method#LeftRotate#0;class#RBTree#0" expanded="false" />
             <element signature="method#RightRotate#0;class#RBTree#0" expanded="false" />
+            <element signature="method#InsertFix#0;class#RBTree#0" expanded="false" />
+            <element signature="method#Insert#0;class#RBTree#0" expanded="false" />
+            <element signature="method#delete#0;class#RBTree#0" expanded="false" />
+            <element signature="method#RB_delete#0;class#RBTree#0" expanded="false" />
+            <element signature="method#RBDeleteFixup#0;class#RBTree#0" expanded="false" />
+            <element signature="method#trasplant#0;class#RBTree#0" expanded="false" />
+            <element signature="method#tree_minimum#0;class#RBTree#0" expanded="false" />
           </folding>
         </state>
       </provider>
