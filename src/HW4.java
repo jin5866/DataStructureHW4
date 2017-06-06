@@ -90,6 +90,10 @@ public class HW4 {
             {
                 break;
             }
+
+
+            //rbTree.tree_print(rbTree.root,0);
+            //System.out.println();
         }
 
         br.close();

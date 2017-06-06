@@ -7,9 +7,9 @@ public class RBTree {
 
     RBTree()
     {
-        nil.right =nil;
-        nil.left = nil;
-        nil.parent = nil;
+        //nil.right =nil;
+        //nil.left = nil;
+        //nil.parent = nil;
         nil.red = true;
     }
 
@@ -45,6 +45,7 @@ public class RBTree {
         }
 
         b.left = a;
+        b.parent = a.parent;
         a.parent = b;
 
 
@@ -73,7 +74,7 @@ public class RBTree {
         {
             a.parent.right = b;
         }
-
+        b.right = a;
         b.parent = a.parent;
         a.parent = b;
 
@@ -267,12 +268,16 @@ public class RBTree {
 
     void RBDeleteFixup(Node x)
     {
-        Node w;
-        while(x!=root && x.red == false )
+        Node w = nil;
+        while(x!=nil && x!=root && x.red == false )
         {
-            if(x == x.parent.left)
+            if(x!= nil && x == x.parent.left)
             {
                 w = x.parent.right;
+                if(w == nil )
+                {
+                    return;
+                }
                 if(w.red == true)
                 {
                     w.red = false;
@@ -304,21 +309,25 @@ public class RBTree {
             else
             {
                 w = x.parent.left;
-                if(w.red == true)
+                if(w == nil )
+                {
+                    return;
+                }
+                if(w != null && w.red == true)
                 {
                     w.red = false;
                     x.parent.red =true;
                     RightRotate(x.parent);
                     w = x.parent.left;
                 }
-                if(w.right.red == false && w.left.red == false)
+                if(w!=nil && w.right.red == false && w.left.red == false)
                 {
                     w.red = true;
                     x = x.parent;
                 }
                 else
                 {
-                    if(w.left.red == false)
+                    if(w!= nil && w.left.red == false)
                     {
                         w.right.red = false;
                         w.red = true;
@@ -445,6 +454,17 @@ public class RBTree {
             }
             InorderTraversal(bw , a.right);
         }
+    }
+
+
+    public void tree_print(Node tree, int level) {
+        if (tree.right != nil)
+            tree_print(tree.right, level + 1);
+        for(int i = 0; i < level; i++)
+            System.out.print("    ");
+        System.out.println(tree.val);
+        if (tree.left != nil)
+            tree_print(tree.left, level + 1);
     }
 
 
