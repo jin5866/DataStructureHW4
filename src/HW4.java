@@ -14,7 +14,7 @@ public class HW4 {
 
         String path = HW4.class.getResource("").getPath();
         String inputPath = path + "input.txt";
-        String ouputPath = path + "ouput.txt";
+        String outputPath = path + "output.txt";
 
         BufferedReader br = null;
         BufferedWriter bw = null;
@@ -23,7 +23,7 @@ public class HW4 {
         FileReader fr = new FileReader(file);
         //int tmp = fr.read();
 
-        File ofile = new File(ouputPath);
+        File ofile = new File(outputPath);
         FileWriter fw = new FileWriter(ofile,false);
         bw = new BufferedWriter(fw);
 
@@ -63,6 +63,11 @@ public class HW4 {
             catch (Exception e)
             {
 
+            }
+
+            if(val == 12)
+            {
+                System.out.println(12);
             }
 
 

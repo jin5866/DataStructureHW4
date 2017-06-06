@@ -5,6 +5,14 @@ import java.io.*;
 
 public class RBTree {
 
+    RBTree()
+    {
+        nil.right =nil;
+        nil.left = nil;
+        nil.parent = nil;
+        nil.red = true;
+    }
+
     String ol = System.getProperty("line.separator");
 
 
@@ -94,14 +102,14 @@ public class RBTree {
                     uncle.red = false;
                     z.parent.parent.red = true;
                 }
-                else if(z == z.parent.right)
-                {
-                    //case 2
-                    z = z.parent;
-                    LeftRotate(z);
-                }
                 else
                 {
+                    if(z == z.parent.right)
+                    {
+                        //case 2
+                        z = z.parent;
+                        LeftRotate(z);
+                    }
                     //case 3
                     z.parent.red = false;
                     z.parent.parent.red = true;
@@ -121,14 +129,14 @@ public class RBTree {
                     uncle.red = false;
                     z.parent.parent.red = true;
                 }
-                else if(z == z.parent.left)
-                {
-                    //case 2
-                    z = z.parent;
-                    RightRotate(z);
-                }
                 else
                 {
+                    if(z == z.parent.left)
+                    {
+                        //case 2
+                        z = z.parent;
+                        RightRotate(z);
+                    }
                     //case 3
                     z.parent.red = false;
                     z.parent.parent.red = true;
@@ -195,8 +203,15 @@ public class RBTree {
 
         if(x != nil)
         {
-            RB_delete(x);
-            return true;
+            if(x.val == val)
+            {
+                RB_delete(x);
+                return true;
+            }
+            else
+            {
+                return  false;
+            }
         }
         else
         {
@@ -261,6 +276,7 @@ public class RBTree {
                 if(w.red == true)
                 {
                     w.red = false;
+                    x.parent.red =true;
                     LeftRotate(x.parent);
                     w = x.parent.right;
                 }
@@ -291,6 +307,7 @@ public class RBTree {
                 if(w.red == true)
                 {
                     w.red = false;
+                    x.parent.red =true;
                     RightRotate(x.parent);
                     w = x.parent.left;
                 }
@@ -364,7 +381,7 @@ public class RBTree {
         }
         else
         {
-            return GetTotal(a.left) + GetTotal(a.right) + 1;
+            return GetTotal(a.left) + 1 +GetTotal(a.right);
         }
     }
 
@@ -424,7 +441,7 @@ public class RBTree {
             }
             catch (Exception e)
             {
-
+                System.out.println(a.val);
             }
             InorderTraversal(bw , a.right);
         }
