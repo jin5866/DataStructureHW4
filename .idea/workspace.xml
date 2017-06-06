@@ -16,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RBTree.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RBTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RBTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="432" column="5" lean-forward="true" selection-start-line="432" selection-start-column="5" selection-end-line="432" selection-end-column="5" />
+            <state relative-caret-position="667">
+              <caret line="464" column="64" lean-forward="true" selection-start-line="464" selection-start-column="64" selection-end-line="464" selection-end-column="64" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="method#Delete#0;class#RBTree#0" expanded="false" />
@@ -31,7 +31,7 @@
                 <element signature="method#GetTotal#1;class#RBTree#0" expanded="false" />
                 <element signature="e#8577#8578#0" expanded="true" />
                 <element signature="e#8618#8619#0" expanded="true" />
-                <element signature="method#GetBlackNode#1;class#RBTree#0" expanded="false" />
+                <element signature="e#9225#9226#0" expanded="true" />
                 <element signature="e#9266#9267#0" expanded="true" />
                 <element signature="method#InorderTraversal#1;class#RBTree#0" expanded="false" />
               </folding>
@@ -39,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HW4.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HW4.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HW4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state relative-caret-position="376">
+              <caret line="85" column="67" lean-forward="true" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -101,14 +101,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Node.java" />
-        <option value="$PROJECT_DIR$/src/HW4.java" />
         <option value="$PROJECT_DIR$/src/RBTree.java" />
+        <option value="$PROJECT_DIR$/src/HW4.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="568" />
-    <option name="y" value="51" />
+    <option name="x" value="475" />
+    <option name="y" value="82" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -426,7 +426,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="568" y="51" width="1400" height="1000" extended-state="0" />
+    <frame x="475" y="82" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -501,8 +501,20 @@
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HW4.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HW4.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="73" />
+      <option name="time" value="75" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -546,21 +558,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HW4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RBTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="432" column="5" lean-forward="true" selection-start-line="432" selection-start-column="5" selection-end-line="432" selection-end-column="5" />
+        <state relative-caret-position="667">
+          <caret line="464" column="64" lean-forward="true" selection-start-line="464" selection-start-column="64" selection-end-line="464" selection-end-column="64" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="method#Delete#0;class#RBTree#0" expanded="false" />
@@ -571,9 +572,20 @@
             <element signature="method#GetTotal#1;class#RBTree#0" expanded="false" />
             <element signature="e#8577#8578#0" expanded="true" />
             <element signature="e#8618#8619#0" expanded="true" />
-            <element signature="method#GetBlackNode#1;class#RBTree#0" expanded="false" />
+            <element signature="e#9225#9226#0" expanded="true" />
             <element signature="e#9266#9267#0" expanded="true" />
             <element signature="method#InorderTraversal#1;class#RBTree#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HW4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="85" column="67" lean-forward="true" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

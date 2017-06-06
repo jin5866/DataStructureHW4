@@ -83,7 +83,7 @@ public class HW4 {
                 }
                 else
                 {
-
+                    System.out.println(""+(-val)+"Is Not In Tree");
                 }
             }
             else

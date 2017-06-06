@@ -462,7 +462,7 @@ public class RBTree {
             tree_print(tree.right, level + 1);
         for(int i = 0; i < level; i++)
             System.out.print("    ");
-        System.out.println(tree.val);
+        System.out.println(""+tree.val+" "+ (tree.red?"r":"b"));
         if (tree.left != nil)
             tree_print(tree.left, level + 1);
     }
